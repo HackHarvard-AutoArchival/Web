@@ -3,25 +3,28 @@ extends layout
 block content
   .page-header
 
-  h1(style="font-weight: bold; text-align: center;") Create new Perma Links
-  h3(style="font-weight: normal; color:#4DA5F4; text-align: center; margin-bottom: 45px; ") Upload and XML file to preserve embedded URLs forever.
+  h1(style="font-weight: bold; text-align: center;") Create New Permalinks
+  h3(style="font-weight: normal; color:#4DA5F4; text-align: center; margin-bottom: 45px; ") Upload JSON files to preserve embedded URLs forever.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   form(name="uploader", action="/autoTool/uploads", method="post", enctype="multipart/form-data")
     input(type="file", name="xmlFile", id="file", accept=".xml")
     input(type="submit", value="Upload")
 =======
   form.form-horizontal(name="uploader", action="/fileupload", method="post", enctype="multipart/form-data")
+=======
+  form(name="uploader", action="/autoTool/uploads", method="post", enctype="multipart/form-data")
+    input(type="file", name="xmlFile", id="file", accept=".xml")
+>>>>>>> File upload to autotool.
     .centerMe.autoTool
       p(style="font-weight:bold; font-size: 20px;") Files Selected:
-      .list-group.filesUploaded
-        a(href="#", class="list-group-item active") Example.json
-        a(href="#", class="list-group-item") Example2.json
-        a(href="#", class="list-group-item") Example3.json
-        a(href="#", class="list-group-item") Example4.json
+      .list-group.filesUploaded(hidden=true, id="filesUploaded")
+        a(href="#", class="list-group-item active")
+      p(style="float:left;") No files selected.
       .fileUpload.btn.btn-primary
         <span>Upload</span>
-        <input type="file" class="upload" />
+        <input type="file" class="upload" id="uploadBtn" accept=".xml" multiple=""/>
 
 
         
