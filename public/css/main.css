@@ -3727,9 +3727,10 @@ fieldset[disabled] .btn-default.active {
     white-space: nowrap;
     margin: 10px;
     width: 20%;
+    height: 50px;
+    font-size: 20px;
     float: right;
     display: inline-block;
-    min-width: 80px;
 }
 .fileUpload input.upload {
     position: absolute;
@@ -3755,10 +3756,6 @@ fieldset[disabled] .btn-default.active {
   width: 80%;
   min-height: 150px;
   padding: 20px;
-}
-
-.white {
-  background: transparent;
 }
 
 .btn-large {
