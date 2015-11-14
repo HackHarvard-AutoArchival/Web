@@ -8,10 +8,13 @@ block content
 
   form(name="uploader", action="/autoTool/uploads", method="post", enctype="multipart/form-data")
     .centerMe.autoTool
-      p(style="font-weight:bold; font-size: 20px;") Files Selected:
-      .list-group.filesUploaded(hidden=true, id="filesUploaded")
-        a(href="#", class="list-group-item active")
-      p(style="float:left;") No files selected.
-      .fileUpload.btn.btn-primary
-        <span>Upload</span>
-        <input type="file" class="upload" id="uploadBtn" accept=".xml" multiple=""/>
+      .chooserContain
+        .fileUpload.btn.btn-primary
+            <span>Upload</span>
+            <input type="file" class="upload" name="jsonInput" id="uploadBtn" accept=".json" multiple=""/>
+        p(style="font-weight:bold; font-size: 20px;") Files Selected:
+        .list-group.filesUploaded(id="fileUploadQueue")
+        p(style="float:left;", id="filePrompt") No files selected.
+    .centerMe.autoTool.white
+      button.btn.btn-primary(type='submit', style="width: 100%; height: 40px; font-size: 20px; height:50px; min-width:110px")
+        | Process
