@@ -23,3 +23,7 @@ block content
         button.btn.btn-primary(type='submit')
           i.fa.fa-envelope
           | Send
+
+  form(name="uploader", action="/fileupload", method="post", enctype="multipart/form-data")
+    input(type="file", name="_csrf", id="file")
+    input(type="submit", value="Upload")
