@@ -29,7 +29,7 @@ var homeController = require('./controllers/home');
 var userController = require('./controllers/user');
 var apiController = require('./controllers/api');
 var contactController = require('./controllers/contact');
-
+var fileController = require('./controllers/file');
 /**
  * API keys and Passport configuration.
  */
@@ -93,6 +93,12 @@ app.use(function(req, res, next) {
   next();
 });
 app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }));
+
+/**
+* Test 
+*/
+
+app.get('/files', fileController.file);
 
 
 /**
