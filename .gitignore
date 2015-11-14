@@ -1,0 +1,7 @@
+# Common annoynaces
+*.swp
+.DS_Store
+data
+
+# Node
+node_modules
