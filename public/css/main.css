@@ -3716,6 +3716,72 @@ fieldset[disabled] .btn-default.active {
   background-color: #333;
 }
 
+.filesUploaded {
+  width: 50%;
+  display: inline-block;
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 10px;
+    width: 20%;
+    height: 50px;
+    font-size: 20px;
+    float: right;
+    display: inline-block;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    width:100%;
+    height:100%;
+    filter: alpha(opacity=0);
+}
+
+.centerMe {
+  width: 100%;
+}
+
+.autoTool {
+  margin: 0 auto;
+  background: #F0F0F0 ;
+  width: 80%;
+  min-height: 150px;
+  padding: 20px;
+}
+
+.btn-large {
+  color: #fff;
+  background-color: #4d90fc;
+  border-color: #3d86fc;
+  width: 80%;
+}
+
+.myFile {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  clear: left;
+}
+.myFile input[type="file"] {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  font-size: 100px;
+  filter: alpha(opacity=0);
+  cursor: pointer;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #4d90fc;
