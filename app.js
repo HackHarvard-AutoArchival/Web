@@ -108,8 +108,8 @@ app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }))
 
 app.get('/autoTool', archiveController.index);
 app.post('/autoTool/uploads', upload.array('jsonInput'), function (req, res) {
-  res.json({
-    message: "posted"
+  res.render('autoTool', {
+    title: 'Archival Tool'
   });
 
   //upload(req, res, function (err) {
