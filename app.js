@@ -21,6 +21,8 @@ var passport = require('passport');
 var expressValidator = require('express-validator');
 var sass = require('node-sass-middleware');
 
+var multer = require('multer');
+var upload = multer({ dest: 'autoTool/uploads/' })
 
 /**
  * Controllers (route handlers).
@@ -80,7 +82,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
 app.use(lusca({
-  csrf: true,
+  csrf: false,
   xframe: 'SAMEORIGIN',
   xssProtection: true
 }));
@@ -95,11 +97,26 @@ app.use(function(req, res, next) {
 app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }));
 
 /**
+* Multer configuration
+*/
+/*
+*/
+
+/**
 * Archival Tool route
 */
 
 app.get('/autoTool', archiveController.index);
+app.post('/autoTool/uploads', upload.single('xmlFile'), function (req, res) {
+  res.json({
+    message: "posted"
+  });
 
+  //upload(req, res, function (err) {
+  //});
+  // req.file is the `avatar` file
+  // req.body will hold the text fields, if there were any
+});
 
 /**
  * Primary app routes.

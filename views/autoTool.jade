@@ -24,6 +24,6 @@ block content
           i.fa.fa-envelope
           | Send
 
-  form(name="uploader", action="/fileupload", method="post", enctype="multipart/form-data")
-    input(type="file", name="_csrf", id="file", accept=".xml")
+  form(name="uploader", action="/autoTool/uploads", method="post", enctype="multipart/form-data")
+    input(type="file", name="xmlFile", id="file", accept=".xml")
     input(type="submit", value="Upload")

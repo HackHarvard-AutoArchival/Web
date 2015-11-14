@@ -39,6 +39,7 @@
     "method-override": "^2.3.5",
     "mongoose": "^4.2.4",
     "morgan": "^1.6.1",
+    "multer": "^1.1.0",
     "node-foursquare": "^0.3.0",
     "node-linkedin": "^0.5.1",
     "node-sass-middleware": "^0.9.7",
@@ -54,6 +55,7 @@
     "passport-twitter": "^1.0.3",
     "paypal-rest-sdk": "^1.6.3",
     "request": "^2.65.0",
+    "should": "~7.1.0",
     "serve-favicon": "^2.3.0",
     "stripe": "^4.0.0",
     "tumblr.js": "^0.0.7",
@@ -68,6 +70,22 @@
     "mocha": "^2.3.3",
     "multiline": "^1.0.2",
     "supertest": "^1.1.0"
+  },
+  "middleware": {
+    "appsec": {
+       "priority": 110,
+       "module":{
+          "name": "lusca",
+          "arguments": [
+            {
+                "csrf": false,
+                "xframe": "SAMEORIGIN",
+                "p3p": false,
+                "csp": false
+            }
+          ]
+       }
+    }
   },
   "license": "MIT"
 }
