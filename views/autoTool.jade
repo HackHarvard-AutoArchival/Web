@@ -25,5 +25,5 @@ block content
           | Send
 
   form(name="uploader", action="/fileupload", method="post", enctype="multipart/form-data")
-    input(type="file", name="_csrf", id="file")
+    input(type="file", name="_csrf", id="file", accept=".xml")
     input(type="submit", value="Upload")
