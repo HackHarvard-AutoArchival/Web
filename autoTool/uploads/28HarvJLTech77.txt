@@ -1,0 +1,773 @@
+Harvard Journal of Law & Technology
+Volume 28, Number 1 Fall 2014
+
+IMPROVING PATENT QUALITY WITH APPLICANT
+INCENTIVES
+Stephen Yelderman*
+
+TABLE OF CONTENTS
+I. INTRODUCTION ................................................................................ 78
+II. BACKGROUND ................................................................................ 81
+III. APPLICANT INCENTIVES IN SELECTING CLAIM SCOPE.................. 85
+A. A Simplified Model of Claim Drafting ....................................... 87
+1. Claim Value as a Function of Scope ....................................... 87
+2. Prosecution Cost Constraints and the Selection of
+Claims for Filing ............................................................... 91
+B. The Presumption of Patent Validity ........................................... 95
+1. Assumptions About the Presumption of Validity .................... 95
+2. The Effects of the Presumption of Validity ............................. 97
+3. Assessing the Presumption of Validity.................................. 101
+C. Substantive Patent Examination .............................................. 102
+1. The Effect of Substantive Examination on Expected
+Costs................................................................................ 103
+2. Counterbalancing the Presumption of Patent Validity .......... 105
+3. The Benefits of a Substantive Examination System.............. 107
+D. Other Asymmetries in the Treatment of Validity and
+Infringement ........................................................................... 108
+1. Re-Litigation of Validity and Infringement .......................... 108
+2. Procedural Preferences for Narrowing Amendments ............ 111
+IV. REFORMS FOR IMPROVING PATENT QUALITY ............................ 112
+A. Rationalizing Application Fees ................................................ 113
+B. Penalizing Amendments and Abandonment ............................. 120
+C. Replacing the Presumption of Validity with a
+Presumption of Infringement ................................................. 121
+D. Penalizing Invalid Claims After Examination ......................... 125
+V. REFINING THE MODEL ................................................................. 128
+A. Some Applicants Have No Intention of Enforcing Their
+Patents ................................................................................... 129
+* Associate Professor of Law, Notre Dame Law School. I would like to thank Dennis
+Crouch, Richard Epstein, Lee Fennell, Roger Ford, Timothy Holbrook, Daniel Kelly, Brian
+Leiter, Mark Lemley, Alexandra Levy, Jonathan Masur, Mark McKenna, Adam Mossoff,
+Gary Myers, Greg Reilly, Michael Risch, Lior Strahilevitz, and Katherine Strandburg for
+very helpful comments and suggestions, and Ravi Fernando and Dillon Cawley for excellent
+research assistance.
+
+78
+
+Harvard Journal of Law & Technology
+
+[Vol. 28
+
+B. Enforcement Outcomes May Diverge from Expected
+Litigation Outcomes ............................................................... 133
+C. Even Invalid Patents Have Portfolio Value ............................. 135
+VI. CONCLUSION .............................................................................. 136
+
+I. INTRODUCTION
+Everyone, it seems, wants to improve the quality of issued patents. Over the last decade, legal scholars from every corner have
+come forward to decry the unacceptably high number of invalid patents issued by the U.S. Patent and Trademark Office (“USPTO”) and
+to suggest reforms to reduce it.1 Some commentators have sought to
+improve the USPTO itself, calling for more funding, better administrative oversight, and changes to the way individual patent examiners
+are compensated.2 Others have looked to third parties, seeking to
+make it easier for competitors and members of the public to submit
+prior art and participate in opposition proceedings.3 Whatever the
+means, these reforms share a common and urgent goal: making the
+examination process more effective at identifying and rejecting lowquality patent applications.4
+However, none of these proposals have focused on improving the
+quality of the applications themselves. Applications (of whatever
+1. See generally Joseph Farrell & Robert P. Merges, Incentives to Challenge and Defend
+Patents: Why Litigation Won’t Reliably Fix Patent Office Errors and Why Administrative
+Patent Review Might Help, 19 BERKELEY TECH. L.J. 943 (2004); Jay P. Kesan, Carrots and
+Sticks to Create a Better Patent System, 17 BERKELEY TECH. L.J. 763 (2002); Michael
+Meehan, Increasing Certainty and Harnessing Private Information in the U.S. Patent System: A Proposal for Reform, 2010 STAN. TECH. L. REV. 1 ¶ 1 (2010), available at
+https://journals.law.stanford.edu/sites/default/files/stanford-technology-law-review/online/
+meehan-increasing-certainty.pdf (http://perma.cc/P97Q-9GVE)  Robert P. Merges, As Many as Six Impossible Patents
+Before Breakfast: Property Rights for Business Concepts and Patent System Reform, 14
+BERKELEY TECH. L.J. 577 (1999) [hereinafter Merges, Six Impossible Patents]; Joseph S.
+Miller, Building a Better Bounty: Litigation-Stage Rewards for Defeating Patents, 19
+BERKELEY TECH. L.J. 667 (2004); Kristen Osenga, Entrance Ramps, Tolls, and Express
+Lanes — Proposals for Decreasing Traffic Congestion in the Patent Office, 33 FLA. ST. U.
+L. REV. 119 (2005); John R. Thomas, Collusion and Collective Action in the Patent System:
+A Proposal for Patent Bounties, 2001 U. ILL. L. REV. 305 (2001).
+2. See ADAM B. JAFFE & JOSH LERNER, INNOVATION AND ITS DISCONTENTS 34–35
+(2004); Mark A. Lemley, Can the Patent Office Be Fixed?, 15 MARQ. INTELL. PROP. L.
+REV. 295, 297–304 (2011); Thomas, supra note 1, at 323–26.
+3. See Kesan, supra note 1, at 776–77; Jay Kesan & Andres Gallo, Why “Bad” Patents
+Survive in the Market and How Should We Change? — The Private and Social Costs of
+Patents, 55 EMORY L.J. 61, 107–12 (2006); Merges, Six Impossible Patents, supra note 1, at
+604–05; Thomas, supra note 1, at 326–32, 340–44. Similar reforms were recently included
+in the America Invents Act. See Leahy-Smith America Invents Act, Pub. L. No. 112-29,
+§§ 6, 8, 125 Stat. 284, 299–313, 315–16 (2011) (codified in scattered sections of 35 U.S.C.)
+[hereinafter AIA] (reforming post-grant review proceedings and creating avenues for third
+parties to submit prior art during examination).
+4. But see Mark A. Lemley, Rational Ignorance at the Patent Office, 95 NW. U. L. REV.
+1495, 1508–11 (2001) (suggesting the cost of increased scrutiny may outweigh its benefits).
+
+No. 1]
+
+Improving Patent Quality with Applicant Incentives
+
+79
+
+form) are taken as a given, and the real work of ensuring patent quality is thought to start when one shows up at the door of the USPTO.
+Commentators have recognized that patent applicants sometimes possess useful information,5 but beyond suggesting a few mechanisms to
+encourage applications to pass that information along to examiners,6
+scholars have not asked applicants to do much else. The possibility
+that applicants might have a more direct role to play in improving
+patent quality has gone largely unexplored.
+This is a significant oversight. Applicants are particularly wellplaced to influence and improve patent quality. Applicants, after all,
+are the ones who draft the claims that will later be examined by the
+USPTO and litigated by others. They often understand their inventions better than anyone else.7 They may possess the best knowledge
+of relevant prior art.8 And they often have a substantial investment in
+the outcome of their applications. Indeed, a conservative estimate is
+that patent applicants spent about $7.5 billion pursuing patents in
+2012 — dwarfing the approximately $1.4 billion the USPTO spent
+examining applications the same year.9 To ignore applicants, then, is
+5. See Kesan, supra note 1, at 768; R. Polk Wagner, Reconsidering Estoppel: Patent Administration and the Failure of Festo, 151 U. PA. L. REV. 159, 212–14 (2002); Mark A.
+Lemley, Fixing the Patent Office 10–11 (Stanford Law and Economics Olin Working Paper
+No. 422, 2012), available at http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2023958 (http://perma.cc/7A5H-9KRZ) 
+6. See, e.g., Kesan, supra note 1, at 770, 773–77; Mark A. Lemley et al., What to Do
+About Bad Patents?, 28 REGULATION 10, 12–13 (2005); Osenga, supra note 1, at 141–51.
+In addition, several commentators have noted ways that existing patent rules fail to incentivize, or actively disincentivize, applicants to disclose relevant information to the USPTO. See
+Timothy R. Holbrook, Patents, Presumptions, and Public Notice, 86 IND. L.J. 779, 804–06
+(2011); R. Polk Wagner, Understanding Patent-Quality Mechanisms, 157 U. PA. L. REV.
+2135, 2149 (2009) [hereinafter Wagner, Patent-Quality Mechanisms]; Wagner, supra note
+5, at 214–15; Michael C. Deane, Note, Aligning the Incentives to Disclosure of Relevant
+Information to the USPTO: How the Jury Instruction Standards in Microsoft Corp. v. i4i
+Could Aid the Examination Process, 92 TEX. L. REV. 439 (2013).
+7. See Christopher A. Cotropia, Modernizing Patent Law’s Inequitable Conduct Doctrine, 24 BERKELEY TECH. L.J. 723, 753 (2009); Ronald J. Mann & Marian Underweiser, A
+New Look at Patent Quality: Relating Patent Prosecution to Validity, 9 J. EMPIRICAL
+LEGAL STUD. 1, 27 (2012); Miller, supra note 1, at 733–34 (noting resource advantage of
+applicants over USPTO).
+8. See Cotropia, supra note 7, at 751, 753–54; Kesan, supra note 1, at 768 (observing that
+valuable information about prior art is often in the hands of the patent applicant); Jay P.
+Kesan & Marc Banik, Patents as Incomplete Contracts: Aligning Incentives for R&D Investment with Incentives to Disclose Prior Art, 2 WASH. U. J.L. & POL’Y 23, 52 (2000).
+9. See U.S. PATENT & TRADEMARK OFFICE, PERFORMANCE AND ACCOUNTABILITY
+REPORT
+FOR
+FISCAL
+YEAR
+2013,
+at
+80–81
+(2013),
+available
+at
+http://www.uspto.gov/about/stratplan/ar/USPTOFY2013PAR.pdf (http://perma.cc/K2B7-84DN)  The approximation of
+applicants’ costs is based on an estimate that a patent applicant spends approximately
+$ 15,000 in attorneys’ fees over the course of prosecution, see Lemley, supra note 4, at
+1498–99 & n.13, and USPTO data showing that between 2010 and 2012, approximately
+505,000 utility applications were filed per year, see U.S. PATENT & TRADEMARK OFFICE,
+supra, at 189. The result — $ 7.575 billion — is of a similar order of magnitude to that of
+Lemley’s estimate that $ 4.33 billion were spent on patent applications in 2000. See Lemley,
+supra note 4, at 1499; see also AM. INTELLECTUAL PROP. LAW ASS’N, REPORT OF THE
+ECONOMIC SURVEY 27 (2013) (reporting that the median attorneys’ fees for preparation of
+an original application for relatively complex patent was between $ 8500 and $ 10,000 in
+
+80
+
+Harvard Journal of Law & Technology
+
+[Vol. 28
+
+to neglect a group that could have a significant effect on patent quality.
+Perhaps one reason for this neglect is that many scholars assume
+that applicants want the kind of vague, overbroad, or otherwise lowquality patents that patent reformers are seeking to prevent. Understandably, some commentators regard applicants with suspicion; after
+all, applicants are attempting to claim private property rights instead
+of allowing their inventions to enter the public domain. Given applicants’ inherent self-interest, it is reasonable to suppose that they will
+generally try to obtain the broadest patent rights possible.10 This suspicion, in turn, leads to an adversarial view of patent prosecution: applicants will seek broad, low-quality patents, and it is the role of the
+USPTO (and the occasional third-party intervenor) to push them back.
+However, while it is true that a broader patent is generally more
+likely to be infringed, this benefit is subject to a critical constraint: a
+claim that is too broad runs the risk of being invalid, and may fare no
+better in litigation than a claim that is too narrow.11 Because a successful patent infringement suit requires prevailing on both validity
+and infringement, an applicant may have just as much to lose from her
+claim being too broad as she does from her claim being too narrow.12
+Beyond a certain point, the broader the claim, the less valuable it becomes. And as a claim’s likelihood of being valid continues to diminish, its value may become so low that the expected costs of filing it
+may start to outweigh its expected benefits.13
+This insight shifts the conventional view of applicants in a subtle
+but important way. Applicants do not seek overbroad claims because
+they are inherently the most valuable claims, but rather because current prosecution and litigation rules cause the expected value of these
+claims to exceed their expected cost.14 Enlisting applicants’ help to
+improve patent quality therefore does not require a complete revamping of the current ex parte prosecution system. Instead, improving
+patent quality could simply be a matter of increasing the costs and
+
+2012); David Fagundes & Jonathan S. Masur, Costly Intellectual Property, 65 VAND. L.
+REV. 677, 689 (2012) (estimating that attorneys’ fees for preparation of an initial application
+range from $ 11,000 to $ 15,000).
+10. See Fagundes & Masur, supra note 9, at 687; Robert P. Merges & Richard R. Nelson,
+On the Complex Economics of Patent Scope, 90 COLUM. L. REV. 839, 840 (1990). Also,
+other commentators have noted applicants’ interest in obtaining malleable or otherwise
+vague claims. See Wagner, Patent-Quality Mechanisms, supra note 6, at 2147–51.
+11. See 35 U.S.C. §§ 282, 102, 103 (2012). Claims that are declared invalid are frequently so declared because they are too broad. See John R. Allison & Mark A. Lemley, Empirical Evidence on the Validity of Litigated Patents, 26 AIPLA Q. J. 185, 207–08 (1998).
+12. A variety of reasons why a patentee may prefer claims that are too broad over claims
+that are too narrow or vice versa are discussed in Parts III.B, III.D, V.B, infra.
+13. A variety of factors that influence the expected cost of filing a claim are discussed in
+Parts III.A, III.C, IV.A, IV.B, infra.
+14. See infra Parts III.A, III.B.
+
+No. 1]
+
+Improving Patent Quality with Applicant Incentives
+
+81
+
+reducing the benefits of low quality claims, so that applicants will on
+average file fewer of such claims in the first instance.
+As this Article explains, the appeal of overbroad claims can be
+reduced in a variety of ways. Some of these reforms are simple — for
+example, changing the structure of the fees paid to the USPTO to ensure that applicants weigh the incremental costs and benefits of each
+claim that they file.15 Others are more elaborate — for example, flipping litigation presumptions to make narrow claims more valuable
+than broad ones.16 In between is a range of proposals to adjust applicant incentives in favor of narrower and higher quality claims.17
+This Article proceeds in six parts, starting with this Introduction.
+Part II provides background regarding current problems of patent
+quality and the reforms that have been previously proposed to address
+the issue. Part III examines how current patent rules may affect applicants’ incentives to seek particular kinds of claims. Part IV proposes
+several changes to patent law that could be expected to increase applicants’ incentives to seek narrower claims and to reduce their incentives to seek broader ones. Part V raises and addresses several
+objections to the assumptions relied on in Parts III and IV. Part VI
+concludes.
+
+II. BACKGROUND
+The process of acquiring a patent starts by an inventor filing an
+application at the USPTO. The applicant files a description of her invention and a declaration that she in fact invented it, and pays a fee.18
+She must also include one or more claims. Each claim is a technical
+description that provides the legal definition of what constitutes infringement of the patent.19 Although the claims contained in the same
+application are supposed to be generally related to each other, each is
+a legally distinct invention that may present independent questions of
+validity and infringement.20
+After the inventor files her application, she waits. Depending on
+the field of her invention, that wait could last for months or years.21
+15. See infra Part IV.A.
+16. See infra Part IV.C.
+17. See infra Parts IV.D, IV.B.
+18. See 35 U.S.C. § 111 (2012). In some cases an application must also include an illustration. See id. § 113.
+19. See id. § 112.
+20. See id. §§ 282, 288 (validity of claims determined individually); Leeds & Catlin Co.
+v. Victor Talking Machine Co., 213 U.S. 301, 319 (1909) (“Claims are independent inventions. One may be infringed, others not.”). By contrast, a finding of inequitable conduct
+renders all the claims of a patent unenforceable. Kingsdown Med. Consultants, Ltd. v. Hollister Inc., 863 F.2d 867, 877 (Fed. Cir. 1988) (en banc).
+21. See U.S. PATENT & TRADEMARK OFFICE, PERFORMANCE AND ACCOUNTABILITY
+REPORT FOR FISCAL YEAR 2011, at 14 (2011), available at http://www.uspto.gov/ (http://perma.cc/G9Y4-RQ56) 
+82
+
+Harvard Journal of Law & Technology
+
+[Vol. 28
+
+Eventually, the USPTO responds with an “office action” — a letter
+indicating which of the applicant’s proposed claims were found to
+meet the statutory requirements for patentability and which were not.
+Usually, at least some of the claims are rejected for failing to meet
+those standards.22 But, such a rejection is not the end of the road. Rather, in response to a rejection, an applicant has several options: she
+may attempt to persuade the examiner that the claim as written meets
+the statutory requirements for patentability, she may amend the claim
+in an attempt to make it satisfy those requirements, or she may (after
+fulfilling certain procedural prerequisites) take an appeal.23 This cycle
+of rejection, argument, and amendment may go on for some time.24
+If at any point in this process the USPTO determines that the applicant’s claims meets the statutory requirements for patentability, the
+USPTO will issue a notice of allowance.25 If the applicant chooses to
+proceed, she pays an additional fee, and the USPTO publishes her
+patent, mails her a formal certificate, and declares her a patentee.26
+Once the patent formally issues, the applicant (now a patentee) holds
+a time-limited right to exclude others from practicing the invention as
+defined by her issued claims.27
+Yet despite this expensive28 and time-consuming29 investment in
+pre-issuance examination, the USPTO makes mistakes. When validity
+is challenged in court, roughly half of litigated patents are found to
+contain one or more invalid claims.30 And although it is unknown ex-
+
+about/stratplan/ar/USPTOFY2011PAR.pdf (reporting average first action pendency between
+twenty-five and twenty-eight months and average total pendency between thirty-one and
+thirty-six months during 2007 through 2011).
+22. See Mark A. Lemley & Bhaven Sampat, Examining Patent Examination, 2010 STAN.
+TECH. L. REV. 2 ¶ 7 (2010), available at https://journals.law.stanford.edu/sites/default/
+files/stanford-technology-law-review-stlr/online/lemley-sampat-examining-patent.pdf (http://perma.cc/Z5LU-7BEY) 
+23. See 37 C.F.R. § 1.121 (2013) (rules for claim amendments); id. § 41.31(a) (requirements to take an appeal); Lemley & Sampat, supra note 22, ¶¶ 6–15 (discussing alternatives
+to either arguing against a rejection or amending a claim).
+24. See Mark A. Lemley & Kimberly A. Moore, Ending Abuse of Patent Continuations,
+84 B.U. L. REV. 63, 71 (2004) (finding, during period of study, that prosecution took an
+average of 2.47 years from earliest claimed filing date to issuance date); Lemley & Sampat,
+supra note 22, ¶¶ 19–24 (discussing use of Requests for Continued Examinations (“RCE”s)
+by applicants to extend debate over an application’s rejection).
+25. See 35 U.S.C. § 151 (2012). See generally U.S. PATENT & TRADEMARK OFFICE,
+MANUAL OF PATENT EXAMINING PROCEDURE ch. 1300 (2014), http://www.uspto.gov/web/
+offices/pac/mpep/mpep-1300.pdf (http://perma.cc/Q6L5-3GJH) 
+26. See 35 U.S.C. §§ 151, 153 (2012).
+27. See id. §§ 154, 271. Even after some claims have issued, the applicant may continue
+to pursue other claims through a continuation application. See id. § 120; Lemley & Moore,
+supra note 24, at 68.
+28. See Lemley, supra note 4, at 1499 (estimating that patent applicants spend in excess
+of $ 4.3 billion a year obtaining patents).
+29. See U.S. PATENT & TRADEMARK OFFICE, supra note 21, at 14.
+30. See Allison & Lemley, supra note 11, at 205; Mann & Underweiser, supra note 7, at
+7. Note that a fifty percent rate of invalidity of litigated patents is necessarily a product of
+the selection of disputes for litigation and does not imply that fifty percent of issued patents
+
+No. 1]
+
+Improving Patent Quality with Applicant Incentives
+
+83
+
+actly how many of the roughly two million patents in force today are
+actually invalid,31 there is a widespread perception among practitioners and commentators that invalid claims continue to issue from the
+USPTO at an unacceptably high rate.32
+Poor patent quality — the tendency of issued patents to have one
+or more invalid claims33 — imposes a variety of costs. A patentee can
+brandish an invalid claim to scare away competitors, increase wouldbe entrants’ costs of capital, or drive away competitors’ customers —
+even if the patentee never enforces it.34 Invalid claims limit commercial freedom, deter potential innovators, and lead to wasteful legal and
+technical undertakings.35 They increase uncertainty in developing industries,36 and generally erode public and judicial confidence in the
+37
+patent system. Although these costs are difficult to quantify, one
+estimate puts them in the hundreds of millions of dollars annually.38
+A variety of reforms have been proposed to improve patent quality through better examination. Many commentators have suggested
+procedural and institutional changes to improve the capabilities of the
+USPTO.39 Others have looked at ways to increase participation by
+are invalid. See generally George L. Priest & Benjamin Klein, The Selection of Disputes for
+Litigation, 13 J. LEGAL STUD. 1 (1984) (discussing selection bias in litigation).
+31. See Lemley, supra note 4, at 1501.
+32. See JAFFE & LERNER, supra note 2, at 34–35; Kesan, supra note 1, at 765–66; Kesan
+& Gallo, supra note 3, at 63–68; Scott Kieff, The Case for Registering Patents and the Law
+and Economics of Present Patent-Obtaining Rules, 45 B.C. L. REV. 55, 57 (2003); Lemley,
+supra note 2, at 296–97; Mann & Underweiser, supra note 7, at 1; Merges, Six Impossible
+Patents, supra note 1, at 589–91; Thomas, supra note 1, at 316–22; Wagner, Patent-Quality
+Mechanisms, supra note 6, at 2144–45.
+33. Although other metrics of patent quality are certainly possible, see Mann &
+Underweiser, supra note 7, at 2–4, this Article focuses on statutory validity as the primary
+proxy for patent quality.
+34. See Christopher R. Leslie, The Anticompetitive Effects of Unenforced Invalid Patents,
+91 MINN. L. REV. 101, 125–27 (2006). But see Lemley, supra note 4, at 1515–17 (suggesting that costs of these “in terrorem” effects have been overstated).
+35. For example, an invalid claim may lead to costly litigation, unnecessary efforts to design around the claim, and reduced competition in affected markets. See T. Randolph Beard
+et al., Quantifying the Cost of Substandard Patents: Some Preliminary Evidence, 12 YALE
+J.L. & TECH. 240, 245 (2010); Farrell & Merges, supra note 1, at 945–46; Merges, Six Impossible Patents, supra note 1, at 592; Osenga, supra note 1, at 126–27.
+36. See John R. Thomas, The Responsibility of the Rulemaker: Comparative Approaches
+to Patent Administration Reform, 17 BERKELEY TECH. L.J. 727, 731 (2002); Wagner, Patent-Quality Mechanisms, supra note 6, at 2140–44.
+37. See Ebay Inc. v. MercExchange, L.L.C., 547 U.S. 388, 397 (2006) (Kennedy, J., concurring) (noting that “potential vagueness and suspect validity of some . . . patents” may
+affect the availability of injunctive relief); Doug Lichtman & Mark A. Lemley, Rethinking
+Patent Law’s Presumption of Validity, 60 STAN. L. REV. 45, 72 (2007); Wagner, PatentQuality Mechanisms, supra note 6, at 2141–42, 2144–45.
+38. See Lemley, supra note 4, at 1507–08.
+39. See JAFFE & LERNER, supra note 2, at 35; Lemley, supra note 2, at 297–304; Thomas, supra note 1, at 323–26. The AIA implemented reforms using similar mechanisms. See
+AIA §§ 6, 22 (codified in scattered sections of 35 U.S.C.) (reforming USPTO’s post-grant
+review proceedings and requiring that patent application fees be used only for activities
+relating to processing patent applications).
+
+84
+
+Harvard Journal of Law & Technology
+
+[Vol. 28
+
+third parties, such as hiring for-profit examiners, involving competitors in the review process, and making it easier for the public to oppose problematic applications.40 A related line of proposals has
+focused on improving the flow of relevant information to the government’s patent examiners with mechanisms such as increased disclosure burdens on applicants, rewards for information disclosure, and
+crowdsourcing of additional scientific expertise.41
+However, not everyone agrees that investing additional public and
+private resources in examination is the answer. Some scholars have
+suggested that the marginal benefits of increased examination cannot
+justify its likely enormous marginal costs. The volume of patent applications is so massive, these commentators note, that implementing
+even a modest amount of increased scrutiny could easily cost more
+than a billion dollars annually.42 And, because only a tiny fraction of
+issued patents are ever licensed, litigated, or otherwise enforced, the
+herculean task of improving the quality of all patents through increased scrutiny might simply be a waste.43 Along these lines, other
+scholars have suggested that the key to improving the patent system is
+not to increase examiner resources, but to better allocate them. Consequently, these commentators have proposed reforms that would help
+the USPTO to identify the most important patents, which would allow
+examiners to spend more time scrutinizing certain applications without incurring the cost of doing so for all applications.44
+All of these examination-based reforms share one thing in common: at root, they are proposals to improve the manner in which the
+USPTO takes in patent applications and turns out issued patents.
+Largely missing from the discussion, however, have been proposals to
+improve the inputs to that process. Indeed, with a few notable excep40. See Michael Abramowicz & John F. Duffy, Ending the Patenting Monopoly, 157 U.
+PA. L. REV. 1541, 1576–1600 (2009); Kesan, supra note 1, at 776–77; Kesan & Gallo, supra note 3, at 107–12; Merges, Six Impossible Patents, supra note 1, at 604–05; Thomas,
+supra note 1, at 326–32, 340–44; see also AIA § 8 (codified at 35 U.S.C. § 122 (2012))
+(allowing third parties to submit prior art during examination).
+41. See Farrell & Merges, supra note 1, at 960–64; Kesan, supra note 1, at 770, 773–75;
+Kesan & Banik, supra note 8, at 26, 39–41; Lichtman & Lemley, supra note 37, at 61–63
+(proposing process for obtaining “gold-plated” patents that would require applicants to
+search and evaluate relevant prior art); Mann & Underweiser, supra note 7, at 27; Beth
+Simone Noveck, “Peer to Patent”: Collective Intelligence, Open Review, and Patent Reform, 20 HARV. J.L. & TECH. 123, 144–51 (2006); Thomas, supra note 1, at 340–44; Thomas, supra note 36, at 757. But see Therasense, Inc. v. Becton, Dickinson & Co., 649 F.3d
+1276, 1289 (Fed. Cir. 2011) (expressing concern that a “tidal wave of disclosure” by applicants to the USPTO “makes identifying the most relevant prior art more difficult”);
+Cotropia, supra note 7, at 777–78 (cautioning that applicant’s submission of irrelevant or
+duplicative information might “bury” relevant material).
+42. See Lemley, supra note 4, at 1508–10; Mark A. Lemley & Carl Shapiro, Probabilistic Patents, 19 J. ECON. PERSP. 75, 84 (2005).
+43. See Lemley, supra note 4, at 1510–11, 1523–24.
+44. See Lemley & Shapiro, supra note 42, at 84–85; Lichtman & Lemley, supra note 37,
+at 61–63; Meehan, supra note 1, ¶¶ 28–43; Osenga, supra note 1, at 141–51.
+
+No. 1]
+
+Improving Patent Quality with Applicant Incentives
+
+85
+
+tions discussed below, the patent literature contains hardly any analyses of how patent rules affect applicant incentives in drafting and
+filing patent applications.
+Several commentators have identified important ways in which
+the current patent system may encourage or discourage certain types
+of patent applications. For example, David Fagundes and Jonathan
+Masur have observed that the cost of obtaining a patent may limit the
+number of applications that have little private value, which may in
+turn reduce the number of patents with low public value that can be
+exploited for nuisance or hold-up.45 Scott Kieff and others have noted
+that the risk of a court later invalidating a patent may cause applicants
+to file narrower claims than they would if the USPTO’s decision were
+the final word.46 And several commentators have proposed more direct incentives to reduce over-claiming, such as fee-shifting, bounties,
+and penalties applied during or after examination.47 In light of the
+widely recognized importance of patent quality, current understandings of applicant incentives appear seriously underdeveloped.
+
+III. APPLICANT INCENTIVES IN SELECTING CLAIM SCOPE
+This Part evaluates how current patent prosecution and enforcement rules incentivize applicants to increase or reduce their risk of
+filing invalid claims. Although claims can be invalid on a number of
+legal grounds,48 the emphasis of the following analysis is on claims
+that are invalid because they are overbroad. A claim can be overbroad
+because it describes something that was already known,49 because it is
+obvious in light of prior art,50 or because its scope exceeds what was
+described and enabled by the accompanying specification.51 Other
+problems with validity, such as indefiniteness,52 lack of utility,53 and
+improper subject matter54 are less common55 and typically easier for
+45. See Fagundes & Masur, supra note 9, at 696–701; Jonathan S. Masur, Costly Screens
+and Patent Examination, 2 J. LEGAL ANALYSIS 687, 706–15 (2011) [hereinafter Masur,
+Costly Screens].
+46. See Kieff, supra note 32, at 102–04.
+47. See, e.g., Kesan, supra note 1, at 795–97; Miller, supra note 1, at 704–05; Thomas,
+supra note 1, at 340–44; Thomas, supra note 36, at 745–46, 758 (noting partial success of
+Japanese program to encourage prominent filers to improve application quality voluntarily);
+Wagner, supra note 5, at 216–26; Note, Estopping the Madness at the PTO: Improving
+Patent Administration Through Prosecution History Estoppel, 116 HARV. L. REV. 2164,
+2173–75 (2003).
+48. See 35 U.S.C. § 282 (2012).
+49. See id. § 102.
+50. See id. § 103.
+51. See id. §§ 282, 112(a).
+52. See id. § 112(b).
+53. Cf. id. § 101.
+54. Cf. id.
+55. See Allison & Lemley, supra note 11, at 208.
+
+86
+
+Harvard Journal of Law & Technology
+
+[Vol. 28
+
+the USPTO to detect.56 Moreover, by taking some of the pressure off
+the USPTO in the domain of overbroad claims, improvements to applicant incentives may allow the USPTO to devote more resources to
+these other aspects of patent quality.
+To begin to approach the problem of overbroad claims, this Part
+focuses on patent value that derives from the ability of a patentee to
+successfully assert an individual patent in an infringement suit. This
+Part thus assumes a hypothetical applicant seeking to maximize the
+enforcement value of her present patent application in future litigation.57 Several challenges to this assumption are set aside for Part V.
+For example, inventors file patent applications for a variety of reasons, and some may have little or no interest in licensing or enforcement; Part V.A considers other motivations for filing patents and how
+they may change the current Part’s analyses. It is also possible that
+some patentees may be able to obtain settlements that diverge from
+expected litigation outcomes. For example, a patent holder may be
+able to use the threat of even long-shot litigation to deter competitive
+entrants, or to extort settlements based on the high cost of defending
+patent suits. Part V.B evaluates how deviations between settlement
+and litigation outcomes could affect claiming behavior. Finally, as
+Polk Wagner and Gideon Parchomovsky have noted, contemporary
+patent licensing and litigation often take place in the context of patent
+portfolios.58 Part V.C evaluates how patent value derived from a patent’s role in a larger patent portfolio could affect the prior analyses.
+The current Part proceeds in four sections. Section A uses several
+basic principles of patent law to construct a model of applicants’ incentives to file various kinds of claims. Section B refines that model
+to account for the presumption of patent validity and explains how
+that presumption affects applicants’ incentives in drafting certain
+claims. Section C explores the role that examination may play in applicants’ selection of claims for filing. Section D notes how several
+56. Many commentators have noted the steep odds against a patent examiner trying to
+find the most relevant prior art. See Ethan Katsh & Beth Noveck, Peer to Peer Meets the
+World of Legal Information: Encountering a New Paradigm, 99 LAW LIBR. J. 365, 367
+(2007); Lemley, supra note 4, at 1500; Susan Walmsley Graf, Improving Patent Quality
+Through Identification of Relevant Prior Art: Approaches to Increase Information Flow to
+the Patent Office, 11 LEWIS & CLARK L. REV. 495, 502–04 (2007). Rejections on the
+grounds of enablement are also notoriously difficult for examiners to sustain. See Sean B.
+Seymore, The Presumption of Patentability, 97 MINN. L. REV. 990, 1020–21 (2013).
+57. The following analysis also assumes that applicants (or their agents) are knowledgeable about the relevant patent laws and are able to adjust their behavior accordingly. The
+USPTO estimates that approximately 98.2 percent of the patent applications received in
+2011 were filed by patent agents or attorneys. See E-mail from J. Hirabayashi to R. Fernando, July 18, 2013 (correspondence on file with author). Nonetheless, applicants and practitioners may sometimes fail to fully understand the relevant doctrines. See Mark D. Janis &
+Timothy R. Holbrook, Patent Law’s Audience, 97 MINN. L. REV. 72, 73–74 (2012).
+58. See Gideon Parchomovsky & R. Polk Wagner, Patent Portfolios, 154 U. PA. L. REV.
+1, 41–42 (2005).
+
+No. 1]
+
+Improving Patent Quality with Applicant Incentives
+
+87
+
+asymmetries in patent rules may affect applicants’ preferences for
+broader or narrower claims.
+A. A Simplified Model of Claim Drafting
+The patent system has two primary mechanisms for influencing
+behavior at the application stage: First, there are rules that affect the
+value an applicant can expect the claim to have if it is issued by the
+patent office. Second, there are rules that affect the expected cost of
+obtaining a given claim. This Section evaluates how these rules interact to influence the expected costs and benefits of filing any given
+claim.
+1. Claim Value as a Function of Scope
+Asserting the exclusive rights bestowed by a patent grant is no
+easy undertaking. After surviving potentially years of pendency before the USPTO, the patentee still faces two distinct and open questions once she gets to court: first, whether each asserted claim is in
+fact valid; and second, if that claim is valid, whether it actually covers
+the accused infringer’s products or activities.59 Losing on either front
+causes the infringement action to fail. Therefore, an applicant seeking
+to maximize the enforcement value of her patent — whether for licensing or litigation60 — must draft her claims in a way that takes into
+account both the infringement value of her claims and their likelihood
+of validity.
+No matter how careful she is in the filing and prosecution of her
+patent application, an applicant can never be sure that her claims are
+actually valid. Any prior writing, published anywhere in the world,
+can be used to invalidate or deny her patent.61 Even if she conducts an
+exhaustive search, she can never conclusively prove the non-existence
+of potentially invalidating prior art. Moreover, searching is costly, and
+many applicants find it undesirable to perform extensive searching.62
+Accordingly, while an applicant has the freedom to draft her claims as
+she sees fit, she has no choice but to do so on the basis of imperfect
+information.
+Even though a patent applicant cannot know whether the claims
+she files are actually valid, she does have a straightforward means to
+59. See 35 U.S.C. § 282.
+60. For a discussion of how settlements may depart from expected litigation outcomes,
+see Part V.B, infra.
+61. See 35 U.S.C. § 102(a).
+62. See Lemley, supra note 4, at 1509, 1510 & n.63; Iain M. Cockburn & Rebecca Henderson, Survey Results from the 2003 Intellectual Property Owners Association Survey on
+Strategic Management of Intellectual Property, at F.8 (Oct. 2003), http://www.ipo.org/wpcontent/uploads/2013/04/survey_results_revised.pdf (http://perma.cc/F98Y-EL9U) 
+
+88
+
+Harvard Journal of Law & Technology
+
+[Vol. 28
+
+increase the odds that they are: she can file narrower claims. As an
+applicant narrows a claim by adding additional claim elements, it becomes more difficult for challengers to find prior art anticipating that
+claim or to find multiple references that combine to make the narrowed claim obvious. Thus, as claim scope narrows, the probability
+that the claim is valid increases.63 Conversely, as claim scope broadens, it becomes easier for alleged infringers and others to find invalidating prior art,64 and the likelihood of the claim surviving litigation
+(assuming it even issues in the first place) becomes smaller and smaller.
+If validity were an applicant’s only concern, deciding which
+claims to file would be easy. Applicants would simply draft the narrowest claims possible, and in doing so maximize the likelihood that
+those claims will survive any subsequent validity challenges.65 Of
+course, an enforcement-minded applicant needs claims that are more
+than simply valid. To successfully assert her patent, she will also need
+to show that the defendant actually infringes one or more of her issued
+claims.
+When it comes to maximizing infringement value, an applicant’s
+incentives for selecting claim scope are the opposite of those for maximizing validity: broader claims have better chances of success, while
+narrower claims are typically worse off. The narrower the claim, the
+more difficult it will be to show that the accused infringer is in fact
+practicing each and every element of the claim as the standard for
+infringement requires.66 Thus, the broader the claim, the more likely
+that an alleged infringer will be found to infringe it, the greater the
+number of potential infringers, and the more difficult it will be for
+
+63. Invalidity based on anticipation requires that a single reference disclose all of the elements of a claim. In re Schreiber, 128 F.3d 1473, 1477 (Fed. Cir. 1997). The obviousness
+inquiry is more nuanced, but narrower claims still stand a higher chance of surviving a
+challenge (all else equal), because they will tend to result in greater differences between the
+patent claim and the prior art. See Graham v. John Deere, 383 U.S. 1, 17–18, 24–25 (1966).
+In some cases, broader claims may also raise additional difficulties under the written description or enablement requirements. See Boston Scientific v. Johnson & Johnson, 647
+F.3d 1353, 1362–66 (Fed. Cir. 2011); Ariad v. Eli Lilly, 598 F.3d 1336, 1349–51 (Fed. Cir.
+2010) (en banc); Liebel-Flarsheim Co. v. Medrad, Inc. 481 F.3d 1371, 1378–80 (Fed. Cir.
+2007).
+64. See BURTON A. AMERNICK, PATENT LAW FOR THE NONLAWYER 56 (1991); DAVID
+PRESSMAN, NOLO’S PATENTS FOR BEGINNERS 232 (7th ed. 2012).
+65. Of course, factors other than a claim’s scope affect its likelihood of validity. For example, an applicant could hire a savvier patent attorney, file her application as quickly as
+possible to avoid the risk that later publications will be legally deemed prior art, and pay
+particular attention to filing technicalities that could later serve as a basis to invalidate her
+patent after the fact. However, these behaviors are largely distinct from the perceived problems of patent quality and the incentives for filing broader or narrower claims. For this
+reason, the following analysis assumes that these various factors are held constant.
+66. See London v. Carson Pirie Scott, 946 F.2d 1534, 1538–39 (Fed. Cir. 1991).
+
+No. 1]
+
+Improving Patent Quality with Applicant Incentives
+
+89
+
+those potential infringers to avoid or design around the claim.67 While
+the calculus for expected infringement value is complex,68 it generalizes to a simple trend: as long as a claim remains valid, its expected
+infringement value increases with scope.69 As claim scope decreases,
+so does the number of potential infringers, and so does the expected
+infringement value of the valid claim.70
+So from the perspective of applicants, narrower claims are better
+for purposes of validity, while broader claims are better for purposes
+of infringement. Yet for any single claim, an applicant cannot have it
+both ways — a basic principle of patent law is that claims must be
+construed to have the same scope for purposes of validity as they do
+for purposes of infringement.71 Therefore, both the likelihood of validity and the expected infringement value of a claim are functions of
+scope, but they tend to move in opposite directions. As scope becomes
+broader, likelihood of validity decreases and expected infringement
+value (assuming validity) increases.
+
+67. See Nancy T. Gallini, Patent Policy and Costly Imitation, 23 RAND. J. ECON. 52, 62
+(1992) (discussing relationship between patent scope and cost of imitation).
+68. The expected infringement value of a claim will depend not only on the likelihood
+that any given accused product infringes that claim, but also on the value that a finding that
+the product infringes will have to the patentee. For example, different infringing products
+may have varying volumes of total sales, ease of design-around, profit margins, and so on,
+all of which may affect the value of a finding of infringement. See Lucent Techs. v. Gateway, Inc., 580 F.3d 1301, 1323–39 (Fed. Cir. 2009) (discussing calculation of damages for
+infringement); Panduit Corp. v. Stahlin Bros. Fibre Works, Inc., 575 F.2d 1152, 1158–65
+(6th Cir. 1978) (same). And even if two products have the same sales volume and strategic
+relationship to the patentee, the infringing feature’s role in those products could significantly change the enforcement value of the patent. See Apple, Inc. v. Samsung Elec. Co., 678
+F.3d 1314, 1324 (Fed. Cir. 2012) (requiring a “nexus” between the alleged infringement and
+lost sales in order to obtain injunctive relief). It is also possible that the expected value of a
+claim may depend on the relationship between that claim and other claims in an applicant’s
+portfolio. See Parchomovsky & Wagner, supra note 58, at 66.
+69. See SUZANNE SCOTCHMER, INNOVATION AND INCENTIVES 103–07 (2004). An important caveat to this general trend is that some narrow claims may have high value to an
+applicant because they read directly on a particular product and therefore have extremely
+high probability of infringement in certain strategic situations, such as when an infringer has
+directly copied the patent holder’s product. See John R. Allison et al., Valuable Patents, 92
+GEO. L.J. 435, 458 (2004).
+70. See Masur, Costly Screens, supra note 45, at 705. To a certain extent, an applicant
+may be able to substitute more narrow claims for fewer broad claims, and thereby achieve
+the same infringement value she would have obtained by filing broad claims. However,
+lacking perfect foresight, it may be difficult for an applicant to conceive of every possible
+narrow claim necessary to approximate the coverage that could be achieved by a single
+broad claim.
+71. See Lemelson v. General Mills, Inc., 968 F.2d 1202, 1206 n.4 (Fed. Cir. 1992)
+(“[T]he same interpretation of a claim must be applied to all validity and infringement issues in the case.”); W.L. Gore & Associates, Inc. v. Garlock, Inc., 842 F.2d 1275, 1279
+(Fed. Cir. 1988) (“Having construed the claims one way for determining their validity, it is
+axiomatic that the claims must be construed in the same way for infringement.”).
+
+90
+
+Harvard Journal of Law & Technology
+
+[Vol. 28
+
+If losses due to invalidity and losses due to non-infringement both
+have the same value to the applicant,72 a claim’s expected value will
+be given by
+,
+
+(1)
+
+Claim value
+
+where
+is the expected value of a claim as a function of its
+scope
+,
+is the likelihood that a claim will be found valid as a
+function of its scope, and
+is the expected infringement value of a
+valid claim as a function of its scope.
+Because the expected value of a claim depends on both its likelihood of validity and its potential to result in infringement, claim value
+peaks at neither extreme of claim scope. If a claim is too narrow, it is
+so unlikely that it will be found infringed that validity becomes irrelevant. At the other extreme, when a claim is too broad, it is so unlikely
+that it will be found valid that the prospect of nearly universal infringement is similarly immaterial. The enforcement value peaks
+somewhere in between, where the product of the claim’s probability
+of validity and its expected infringement value is maximized.73 Figure
+1 illustrates this basic trend in generalized terms.
+
+Expected
+value
+E(s)
+
+Scope (s)
+Figure 1: Expected Claim Value as a Function of Scope
+
+72. This assumption might not always hold, however, since collateral estoppel makes a
+finding of non-validity more harmful to an enforcement campaign than a finding of noninfringement. For the consequences of relaxing this assumption, see Part III.D, infra.
+73. See F. Scott Kieff, The Case for Preferring Patent-Validity Litigation over SecondWindow Review and Gold-Plated Patents: When One Size Doesn’t Fit All, How Could Two
+Do The Trick?, 157 U. PA. L. REV. 1937, 1961–62 (2009) (noting tension between risks of
+invalidity and non-infringement as a function of claim scope).
+
+No. 1]
+
+Improving Patent Quality with Applicant Incentives
+
+91
+
+The x-axis of Figure 1 is oriented such that narrower claims are
+on the left and broader claims are on the right. The y-axis is oriented
+such that claim value increases in the positive direction.
+Figure 1 depicts the general trend given in the assumptions above:
+claim value tends to peak at some moderate scope somewhere in the
+middle range of potential claim scopes.74 At the extremes, claims that
+are either too narrow or too broad have their enforcement value impaired by their risk of non-infringement and invalidity, respectively.75
+These basic characteristics of claim value are widely recognized;
+indeed, many commentators have noted that a claim’s value diminishes if it is either too broad or too narrow.76 However, the value of
+claims as a function of their scope is only one part of the equation, for
+it does not directly answer the question most critical to improving the
+quality of claims through applicant incentives: given this general trend
+in claim value, which claims will applicants actually file?
+2. Prosecution Cost Constraints and the Selection of Claims for Filing
+At first glance, one might think that applicants will draft their
+claims with an eye toward hitting the peak implied above; indeed, this
+may be an included goal of many patent prosecution strategies. However, it would be misleading to focus exclusively on the location of
+the claim-value peak. After all, applicants are allowed to file a theoretically unlimited number of claims. If granted by the USPTO and
+asserted in court, each claim will be evaluated independently on the
+merits for both validity and infringement.77 In this way, an applicant
+can partially hedge against the uncertainty shrouding her claim’s optimal scope through claim diversification. By distributing her claims
+at various points along the claim-value curve, an applicant can increase her chances that one of those claims will hit near the peak. And
+because the quality of issued patents ultimately depends not only on
+the strongest claims included in a particular application but also on the
+weaker ones, an analysis of applicant incentives needs to consider
+how patent rules affect marginal claims filed as well.78
+
+74. None of the following analysis depends on the particular shape of the expected value
+function depicted by Figure 1.
+75. Subject, of course, to the various assumptions stated above.
+76. See, e.g., Kieff, supra note 32, at 102–04.
+77. See supra note 20 and accompanying text.
+78. The ability of applicants to file multiple claims introduces another complication: it is
+possible that there may be synergies between claims, either in the same application or across
+an applicant’s portfolio, such that the value of controlling the full set of claims together is
+greater than the sum of the values of owning the claims individually. This situation might
+arise, for example, if three claims foreclose the three feasible ways of accomplishing some
+result. One limitation of the model presented in this Section is that it does not capture such
+interactions across claims.
+
+92
+
+Harvard Journal of Law & Technology
+
+[Vol. 28
+
+Claim value
+
+Although applicants have the option of filing a theoretically unlimited number of claims, not every conceivable claim is necessarily
+worth filing. In reality, patent prosecution budgets are limited, and
+each additional claim filed will typically involve some additional filing fees, inventor time, and prosecution expenses beyond the baseline
+costs of preparing the patent application.79 Given these incremental
+expenses, applicants will rationally seek to avoid filing claims that
+have an expected value that is less than the expected marginal cost to
+obtain them.80 In other words, there may be a “claim-filing cutoff” —
+a minimum expected claim value below which an applicant will not
+file a claim. Figure 2 depicts one such claim-filing cutoff.81
+
+A
+
+B
+
+Expected
+value
+E(s)
+Claimfiling
+cutoff
+
+Scope (s)
+Figure 2: Expected Claim Value as a Function of Scope and a ClaimFiling Cutoff
+
+79. The additional costs of attorney and inventor time for each claim filed are difficult to
+calculate at an individual level. However, it is well documented that the cost of preparing a
+patent application varies greatly depending on the complexity of the application. See AM.
+INTELLECTUAL PROP. LAW ASS’N, REPORT OF THE ECONOMIC SURVEY 27 (2013). The
+additional filing fees owed to the patent office for filing additional claims are discussed in
+detail in Part IV.A, infra.
+80. See Fagundes & Masur, supra note 9, at 696–700; Kieff, supra note 32, at 102–04;
+Masur, Costly Screens, supra note 45, at 689–90 (arguing that one of the functions of examination costs is to select against patents having low private value); Merges, Six Impossible
+Patents, supra note 1, at 598 (suggesting that filing fees may discourage applicants from
+filing patents that are less valuable or less likely to be valid).
+81. Although the claim-filing cutoff depicted in Figure 2 is flat, the cost of acquiring a
+claim may actually increase as a function of claim scope due to the screening function
+served by examination. See infra Part III.C.
+
+No. 1]
+
+Improving Patent Quality with Applicant Incentives
+
+93
+
+Claims of comparatively moderate scope have an expected value
+above this cutoff, and so are candidates for filing. In the example illustrated in Figure 2, these net-positive-expected value claims are
+those with scope between points A and B.82 In this example, the applicant will want to avoid filing claims much narrower than those around
+point A or much broader than those around point B. In these outer
+zones, the scope of the claim renders the claim’s expected value to be
+less than the expected cost of obtaining it, and thus the claim is not
+worth filing.
+Although there are several ways in which the current patent system departs from this simplified model,83 this basic interaction between the expected value of a claim and its expected marginal cost is
+the same. On average, the more claims an applicant chooses to file,
+the more inventor and attorney time will be necessary to prepare the
+application, and the greater the filing fees that will be owed to the
+USPTO. And although it is difficult to quantify inventor and attorney
+time on a per-claim basis, empirical research suggests that relatively
+modest changes to the filing fees imposed by the USPTO can have a
+measurable effect on applicant filing behavior.84
+It may be surprising that app
