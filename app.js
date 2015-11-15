@@ -133,28 +133,50 @@ app.post('/autoTool/uploads', upload.array('jsonInput'), function (req, res) {
         console.log("filename", filename);
         var mimetype = jsonArr[i]['mimetype'];
         console.log("mimetype", mimetype);
-        return mimetype.substring(12,mimetype.length);
+        return jsonArr[i]['originalname'];
+        //return mimetype.substring(12,mimetype.length);
       }
     }
     return "";
   }
 
+  var configPermaName = function(oldName) {
+    var jsonE = oldName.substring(oldName.length - 5, oldName.length);
+    var pdfE = oldName.substring(oldName.length - 4, oldName.length);
+    var ret = "";
+    if(pdfE == ".pdf"){
+      ret = oldName.substring(0, oldName.length-5);
+      ret += ".txt";
+      return ret;
+    }
+    else if(jsonE == ".json"){
+      ret = oldName.substring(0,oldName.length - 5);
+      ret += "_perma";
+      ret += jsonE;
+      return ret;
+    }
+    return "";
+  }
+
+
   var binaryPath = path.join(__dirname, 'autoTool/uploads/./web2perma'); 
-  
+  var fileNames = [];
   var argArr = getFileNames(req.files);
   for(var i = 0; i < argArr.length; i++) {
     var filePath = path.join(__dirname , 'autoTool/uploads/' + argArr[i]);
+    var origFilePath = path.join(__dirname , 'autoTool/uploads/');
     var fileExt = getOriginalFileName(req.files,argArr[i]);
-    
-    childProcess('mv ' + filePath + ' ' + filePath + '.' + fileExt, function(error, stdout, stderr){
+    fileNames.push(configPermaName(fileExt));
+    console.log(req.files);
+    childProcess('mv ' + filePath + ' ' + origFilePath + fileExt, function(error, stdout, stderr){
       if (error !== null) {
           console.log('exec error: ', error);
       }
     });
     
-    filePath = filePath + '.' + fileExt;
-    
-    childProcess('' + binaryPath + ' ' + filePath, function(error, stdout, stderr) {
+    origFilePath += fileExt;
+    console.log(origFilePath);
+    childProcess('' + binaryPath + ' ' + origFilePath, function(error, stdout, stderr) {
       console.log('stdout: ', stdout);
       console.log('stderr: ', stderr);
       if (error !== null) {
@@ -163,7 +185,7 @@ app.post('/autoTool/uploads', upload.array('jsonInput'), function (req, res) {
     });  
   }
 
-  var zip = new JSZip();
+  //var zip = new JSZip();
   /*for(var x = 0; x < argArr.length; x ++)
   {
         var error;
@@ -195,6 +217,7 @@ app.post('/autoTool/uploads', upload.array('jsonInput'), function (req, res) {
        zip.file(argArr[x]+"_perma", data, {binary:true});
     });*/
   //}
+  /*
   fs.readFile("hi.txt", 'utf8', function (err,data) {
     if (err) {
       console.log(err);
@@ -210,15 +233,13 @@ app.post('/autoTool/uploads', upload.array('jsonInput'), function (req, res) {
   }
   var blob = zip.generate({type:"arraybuffer"});
 
-
-
   fs.writeFile("test.zip", blob, function(err) {
     if (err) throw err;
   });
-
+  */
   res.render('myFiles', {
     title: 'Archival Tool',
-    files: argArr
+    files: fileNames
   });
 });
 
