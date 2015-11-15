@@ -122,14 +122,34 @@ app.post('/autoTool/uploads', upload.array('jsonInput'), function (req, res) {
     }
     return ret;
   }
+
+  var getOriginalFileName = function(jsonArr, filename) {
+    for(var i = 0; i < jsonArr.length; i++){
+      if(jsonArr[i]['filename'] === filename){
+        console.log("filename", filename);
+        var mimetype = jsonArr[i]['mimetype'];
+        console.log("mimetype", mimetype);
+        return mimetype.substring(12,mimetype.length);
+      }
+    }
+    return "";
+  }
+
   var binaryPath = path.join(__dirname, 'autoTool/uploads/./web2perma'); 
   
-  //console.log();
-  //console.log("ret arr: ", getFileNames(req.files));
   var argArr = getFileNames(req.files);
-  var collectorPath = path.join("/Users/saifmahamood/Documents/HackHarvard-AutoArchival/web/autoTool/uploads", "./web2perma");
   for(var i = 0; i < argArr.length; i++) {
     var filePath = path.join(__dirname , 'autoTool/uploads/' + argArr[i]);
+    var fileExt = getOriginalFileName(req.files,argArr[i]);
+    
+    childProcess('mv ' + filePath + ' ' + filePath + '.' + fileExt, function(error, stdout, stderr){
+      if (error !== null) {
+          console.log('exec error: ', error);
+      }
+    });
+    
+    filePath = filePath + '.' + fileExt;
+    
     childProcess('' + binaryPath + ' ' + filePath, function(error, stdout, stderr) {
       console.log('stdout: ', stdout);
       console.log('stderr: ', stderr);
