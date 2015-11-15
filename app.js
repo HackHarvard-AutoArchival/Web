@@ -138,7 +138,7 @@ app.post('/autoTool/uploads', upload.array('jsonInput'), function (req, res) {
       }
     });  
   }
-  res.render('autoTool', {
+  res.render('myFiles', {
     title: 'Archival Tool'
   });
 });
