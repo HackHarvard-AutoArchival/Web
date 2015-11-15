@@ -8,5 +8,6 @@ block content
     var allFiles = !{JSON.stringify(files)};
     for (var x = 0; x < allFiles.length; x++) {
       var uploadList = document.getElementById('fileUpload');
-      uploadList.innerHTML = uploadList.innerHTML+ "<a href=\"/autoTool/uploads/" + allFiles[x] + ".txt\" class=\"list-group-item\" onclick=\"selectMe(this)\"> " + allFiles[x] + "</a>";
+      uploadList.innerHTML = uploadList.innerHTML+ "<a href=\"../" + allFiles[x] + "\" class=\"list-group-item\" download> " + allFiles[x] + "</a>";
+      var url = "file:///Users/fpozlizzi/Web/autoTool/uploads/"+ allFiles[x] + ".txt";
     }
