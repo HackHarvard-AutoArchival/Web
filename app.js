@@ -101,7 +101,7 @@ app.use(function(req, res, next) {
   next();
 });
 app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }));
-
+app.use(express.static(path.join(__dirname, 'autoTool/uploads')));
 /**
 * Multer configuration
 */
@@ -145,7 +145,7 @@ app.post('/autoTool/uploads', upload.array('jsonInput'), function (req, res) {
     var pdfE = oldName.substring(oldName.length - 4, oldName.length);
     var ret = "";
     if(pdfE == ".pdf"){
-      ret = oldName.substring(0, oldName.length-5);
+      ret = oldName.substring(0, oldName.length-4);
       ret += ".txt";
       return ret;
     }
