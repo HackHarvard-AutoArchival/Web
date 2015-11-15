@@ -3746,6 +3746,11 @@ fieldset[disabled] .btn-default.active {
     filter: alpha(opacity=0);
 }
 
+.whiteSpace {
+  background-color: #ffffff;
+  padding: 50px;
+}
+
 .centerMe {
   width: 100%;
 }
