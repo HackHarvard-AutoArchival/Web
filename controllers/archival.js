@@ -8,3 +8,9 @@ exports.index = function(req, res) {
     title: 'Archival Tool'
   });
 };
+
+exports.myFiles = function(req, res) {
+  res.render('myFiles', {
+    title: 'User Files'
+  });
+};

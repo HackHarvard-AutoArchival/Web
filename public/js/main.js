@@ -5,13 +5,6 @@ $(document).ready(function() {
   // Place JavaScript code here...
 
  	$('input[type=file]').change(function(e){
-
- 		/*a.forEach(value, index, ar)
- 		{
- 			var fileName = $('input[type=file]').val();
-			$("#filesUploaded").innerHTML += "a(href=\"#\", class=\"list-group-item active\") " + fileName;
-		}*/
-
 			//get the input and UL list
 		input = document.getElementById('uploadBtn');
 		var list = document.getElementById("fileUploadQueue");
@@ -27,7 +20,6 @@ $(document).ready(function() {
 			$("#filePrompt").hide();
 		}
 	});
-
 });
 
 function selectMe(e) {
