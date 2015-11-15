@@ -1,5 +1,4 @@
 var input;
-var FindFiles = require("node-find-files");
 
 $(document).ready(function() {
 
@@ -11,7 +10,7 @@ $(document).ready(function() {
 		var list = document.getElementById("fileUploadQueue");
 		//alert(input.files[0].name);
 
-		while (list.hasChildNodes()) {
+		while (list.hasChildNodes()) { 
 			list.removeChild(list.firstChild);
 		}
 
@@ -21,7 +20,6 @@ $(document).ready(function() {
 			$("#filePrompt").hide();
 		}
 	});
-  getPermaFiles();
 });
 
 function selectMe(e) {
@@ -32,17 +30,3 @@ function selectMe(e) {
 		e.classList.remove('active');
 }
 
-function getPermaFiles() {
-  var finder = new FindFiles({
-    rootFolder: "../../autoTool/uploads",
-    filterFunction: function(path,stat) {
-      var jsonPerma = path.substring(path.length - 11, path.length);
-      console.log("jsonPerma", jsonPerma);
-      var pdfPerma = path.substring(path.length - 4,path.length);
-      console.log("pdfPerma", pdfPerma);
-      console.log(path);
-      return ((pdfPerma === ".txt")|| (jsonPerma === "_perma.json")) ? true : false;
-    }
-  });
-  finder.startSearch();
-}

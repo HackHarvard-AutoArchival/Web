@@ -11,6 +11,11 @@ var logger = require('morgan');
 var errorHandler = require('errorhandler');
 var lusca = require('lusca');
 var methodOverride = require('method-override');
+var FindFiles = require("node-find-files");
+var JSZip = require("jszip");
+var fs = require("fs");
+//var JSZipUtils = require("JSZip-Utils");
+
 
 var _ = require('lodash');
 var MongoStore = require('connect-mongo')(session);
@@ -109,7 +114,6 @@ app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }))
 
 app.get('/autoTool', archiveController.index);
 app.post('/autoTool/uploads', upload.array('jsonInput'), function (req, res) {
-  
   if(collector !== null){
     res.end('Collector is already running');
     return;
@@ -158,8 +162,63 @@ app.post('/autoTool/uploads', upload.array('jsonInput'), function (req, res) {
       }
     });  
   }
+
+  var zip = new JSZip();
+  /*for(var x = 0; x < argArr.length; x ++)
+  {
+        var error;
+        fs.readFile(__dirname+"/autoTool/uploads/"+argArr[x]+"_perma.json", 'utf8', function (err,data) {
+            if (err) {
+              console.log(err);
+              error = true;
+            }
+            else
+              zip.file(argArr[x], data, {binary:true});
+        });
+        if(error)
+        {
+          fs.readFile(__dirname+"/autoTool/uploads/"+argArr[x]+".txt", 'utf8', function (err,data) {
+            if (err) {
+              console.log(err);
+            }
+            else
+              zip.file(argArr[x], data, {binary:true});
+          });
+        }
+
+      
+   /*     // loading a file and add it in a zip file
+    JSZipUtils.getBinaryContent("./autoTool/uploads/03cf2534221187268dc4c165d6889a09.txt", function (err, data) {
+       if(err) {
+          throw err; // or handle the error
+       }
+       zip.file(argArr[x]+"_perma", data, {binary:true});
+    });*/
+  //}
+  fs.readFile("hi.txt", 'utf8', function (err,data) {
+    if (err) {
+      console.log(err);
+    }
+    else
+      zip.file("hi.txt", data, {binary:true});
+      console.log("Zip: "+zip);
+  });
+
+  while(zip === 'undefined' || zip === 'null')
+  {
+    console.log("Blob " +blob);
+  }
+  var blob = zip.generate({type:"arraybuffer"});
+
+
+
+  fs.writeFile("test.zip", blob, function(err) {
+    if (err) throw err;
+  });
+
   res.render('myFiles', {
-    title: 'Archival Tool'
+    title: 'Archival Tool',
+    files: argArr
   });
 });
 

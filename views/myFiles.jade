@@ -4,6 +4,9 @@ block content
   .whiteSpace
     h1 Generated Files
     .list-group.filesUploaded(id="fileUpload")
-    .fileDownload.btn.btn-primary
-      <span>Download</span>
-      <input type="submit" class="download" name="jsonInput" id="uploadBtn" />
+  script(type="text/javascript").
+    var allFiles = !{JSON.stringify(files)};
+    for (var x = 0; x < allFiles.length; x++) {
+      var uploadList = document.getElementById('fileUpload');
+      uploadList.innerHTML = uploadList.innerHTML+ "<a href=\"/autoTool/uploads/" + allFiles[x] + ".txt\" class=\"list-group-item\" onclick=\"selectMe(this)\"> " + allFiles[x] + "</a>";
+    }

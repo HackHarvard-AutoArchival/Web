@@ -3784,7 +3784,7 @@ fieldset[disabled] .btn-default.active {
   margin: 0 auto;
   background: #F0F0F0 ;
   width: 80%;
-  min-height: 50px;
+  min-height: 150px;
   padding: 20px;
 }
 
@@ -3811,9 +3811,6 @@ fieldset[disabled] .btn-default.active {
   filter: alpha(opacity=0);
   cursor: pointer;
 }
-
-
-
 
 .btn-primary {
   color: #fff;
