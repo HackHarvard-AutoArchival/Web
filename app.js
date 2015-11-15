@@ -42,7 +42,8 @@ var passportConf = require('./config/passport');
  * Create Express server.
  */
 var app = express();
-
+var childProcess = require('child_process').exec;
+var collector = null;
 /**
  * Connect to MongoDB.
  */
@@ -108,14 +109,38 @@ app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }))
 
 app.get('/autoTool', archiveController.index);
 app.post('/autoTool/uploads', upload.array('jsonInput'), function (req, res) {
+  
+  if(collector !== null){
+    res.end('Collector is already running');
+    return;
+  }
+
+  var getFileNames = function(jsonArr) {
+    var ret = [];
+    for(var i = 0; i < jsonArr.length; i++){
+      ret.push(jsonArr[i]['filename']);
+    }
+    return ret;
+  }
+  var binaryPath = path.join(__dirname, 'autoTool/uploads/./web2perma'); 
+  
+  //console.log();
+  //console.log("ret arr: ", getFileNames(req.files));
+  var argArr = getFileNames(req.files);
+  var collectorPath = path.join("/Users/saifmahamood/Documents/HackHarvard-AutoArchival/web/autoTool/uploads", "./web2perma");
+  for(var i = 0; i < argArr.length; i++) {
+    var filePath = path.join(__dirname , 'autoTool/uploads/' + argArr[i]);
+    childProcess('' + binaryPath + ' ' + filePath, function(error, stdout, stderr) {
+      console.log('stdout: ', stdout);
+      console.log('stderr: ', stderr);
+      if (error !== null) {
+          console.log('exec error: ', error);
+      }
+    });  
+  }
   res.render('autoTool', {
     title: 'Archival Tool'
   });
-
-  //upload(req, res, function (err) {
-  //});
-  // req.file is the `avatar` file
-  // req.body will hold the text fields, if there were any
 });
 
 /**
