@@ -1,0 +1,171 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'JSZipUtils' ]
+2 info using npm@2.10.0
+3 info using node@v0.10.38
+4 verbose node symlink /usr/local/bin/node
+5 verbose install initial load of /Users/fpozlizzi/Web/package.json
+6 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/async/package.json
+7 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/bcrypt-nodejs/package.json
+8 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/bitcore/package.json
+9 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/bitcore-explorers/package.json
+10 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/bitgo/package.json
+11 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/blessed/package.json
+12 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/body-parser/package.json
+13 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/cfenv/package.json
+14 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/chai/package.json
+15 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/cheerio/package.json
+16 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/clockwork/package.json
+17 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/compression/package.json
+18 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/connect-assets/package.json
+19 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/connect-mongo/package.json
+20 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/cookie-parser/package.json
+21 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/errorhandler/package.json
+22 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/express/package.json
+23 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/express-flash/package.json
+24 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/express-session/package.json
+25 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/express-validator/package.json
+26 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/fbgraph/package.json
+27 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/fs/package.json
+28 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/github-api/package.json
+29 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/instagram-node/package.json
+30 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/jade/package.json
+31 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/jszip/package.json
+32 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/lastfm/package.json
+33 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/lob/package.json
+34 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/lodash/package.json
+35 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/lusca/package.json
+36 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/method-override/package.json
+37 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/mocha/package.json
+38 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/mongoose/package.json
+39 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/morgan/package.json
+40 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/multer/package.json
+41 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/multiline/package.json
+42 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/node-find-files/package.json
+43 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/node-foursquare/package.json
+44 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/node-linkedin/package.json
+45 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/node-sass-middleware/package.json
+46 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/nodemailer/package.json
+47 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/passport/package.json
+48 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/passport-facebook/package.json
+49 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/passport-github/package.json
+50 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/passport-google-oauth/package.json
+51 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/passport-instagram/package.json
+52 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/passport-linkedin-oauth2/package.json
+53 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/passport-local/package.json
+54 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/passport-oauth/package.json
+55 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/passport-twitter/package.json
+56 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/paypal-rest-sdk/package.json
+57 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/request/package.json
+58 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/serve-favicon/package.json
+59 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/should/package.json
+60 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/stripe/package.json
+61 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/supertest/package.json
+62 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/tumblr.js/package.json
+63 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/twilio/package.json
+64 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/twit/package.json
+65 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/validator/package.json
+66 verbose installManyTop reading scoped package data from /Users/fpozlizzi/Web/node_modules/yui/package.json
+67 info package.json express-flash@0.0.2 No license field.
+68 info package.json fs@0.0.2 fs is also the name of a node core module.
+69 info package.json fs@0.0.2 No description
+70 info package.json fs@0.0.2 No repository field.
+71 info package.json jszip@2.5.0 license should be a valid SPDX license expression
+72 info package.json node-find-files@0.0.4 license should be a valid SPDX license expression
+73 info package.json passport-oauth@1.0.0 No license field.
+74 info package.json bcrypt-nodejs@0.0.3 No license field.
+75 info package.json bitgo@0.11.45 No license field.
+76 info package.json clockwork@0.1.1 No license field.
+77 info package.json connect-mongo@0.8.2 No license field.
+78 info package.json fbgraph@1.1.0 No license field.
+79 info package.json github-api@0.10.7 license should be a valid SPDX license expression
+80 info package.json instagram-node@0.5.8 No license field.
+81 info package.json lob@3.5.0 No license field.
+82 info package.json lusca@1.3.0 No license field.
+83 info package.json node-foursquare@0.3.0 No license field.
+84 info package.json node-sass-middleware@0.9.7 No license field.
+85 info package.json passport-facebook@2.0.0 No license field.
+86 info package.json passport-github@1.0.0 No license field.
+87 info package.json passport-google-oauth@0.2.0 No license field.
+88 info package.json passport-instagram@1.0.0 No license field.
+89 info package.json passport-local@1.0.0 No license field.
+90 info package.json passport-twitter@1.0.3 No license field.
+91 info package.json paypal-rest-sdk@1.6.4 No license field.
+92 info package.json tumblr.js@0.0.7 No license field.
+93 info package.json twit@2.1.1 No license field.
+94 info package.json yui@3.18.1 No license field.
+95 verbose readDependencies loading dependencies from /Users/fpozlizzi/Web/package.json
+96 silly cache add args [ 'JSZipUtils', null ]
+97 verbose cache add spec JSZipUtils
+98 silly cache add parsed spec { raw: 'JSZipUtils',
+98 silly cache add   scope: null,
+98 silly cache add   name: 'JSZipUtils',
+98 silly cache add   rawSpec: '',
+98 silly cache add   spec: '*',
+98 silly cache add   type: 'range' }
+99 silly addNamed JSZipUtils@*
+100 verbose addNamed "*" is a valid semver range for JSZipUtils
+101 silly addNameRange { name: 'JSZipUtils', range: '*', hasData: false }
+102 silly mapToRegistry name JSZipUtils
+103 silly mapToRegistry using default registry
+104 silly mapToRegistry registry https://registry.npmjs.org/
+105 silly mapToRegistry uri https://registry.npmjs.org/JSZipUtils
+106 verbose addNameRange registry:https://registry.npmjs.org/JSZipUtils not in flight; fetching
+107 verbose request uri https://registry.npmjs.org/JSZipUtils
+108 verbose request no auth needed
+109 info attempt registry request try #1 at 05:43:44
+110 verbose request id c2e44de7b2d8ae62
+111 http request GET https://registry.npmjs.org/JSZipUtils
+112 http 404 https://registry.npmjs.org/JSZipUtils
+113 verbose headers { 'content-type': 'application/json',
+113 verbose headers   'cache-control': 'max-age=0',
+113 verbose headers   'content-length': '2',
+113 verbose headers   'accept-ranges': 'bytes',
+113 verbose headers   date: 'Sun, 15 Nov 2015 10:43:45 GMT',
+113 verbose headers   via: '1.1 varnish',
+113 verbose headers   age: '0',
+113 verbose headers   connection: 'keep-alive',
+113 verbose headers   'x-served-by': 'cache-iad2143-IAD',
+113 verbose headers   'x-cache': 'MISS',
+113 verbose headers   'x-cache-hits': '0',
+113 verbose headers   'x-timer': 'S1447584224.748615,VS0,VE354' }
+114 silly get cb [ 404,
+114 silly get   { 'content-type': 'application/json',
+114 silly get     'cache-control': 'max-age=0',
+114 silly get     'content-length': '2',
+114 silly get     'accept-ranges': 'bytes',
+114 silly get     date: 'Sun, 15 Nov 2015 10:43:45 GMT',
+114 silly get     via: '1.1 varnish',
+114 silly get     age: '0',
+114 silly get     connection: 'keep-alive',
+114 silly get     'x-served-by': 'cache-iad2143-IAD',
+114 silly get     'x-cache': 'MISS',
+114 silly get     'x-cache-hits': '0',
+114 silly get     'x-timer': 'S1447584224.748615,VS0,VE354' } ]
+115 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/JSZipUtils
+115 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:239:14)
+115 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+115 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:368:22)
+115 verbose stack     at Request.emit (events.js:98:17)
+115 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1219:14)
+115 verbose stack     at Request.emit (events.js:117:20)
+115 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1167:12)
+115 verbose stack     at IncomingMessage.emit (events.js:117:20)
+115 verbose stack     at _stream_readable.js:944:16
+115 verbose stack     at process._tickCallback (node.js:448:13)
+116 verbose statusCode 404
+117 verbose pkgid JSZipUtils
+118 verbose cwd /Users/fpozlizzi/Web
+119 error Darwin 15.0.0
+120 error argv "node" "/usr/local/bin/npm" "install" "JSZipUtils"
+121 error node v0.10.38
+122 error npm  v2.10.0
+123 error code E404
+124 error 404 Registry returned 404 for GET on https://registry.npmjs.org/JSZipUtils
+124 error 404
+124 error 404 'JSZipUtils' is not in the npm registry.
+124 error 404 You should bug the author to publish it (or use the name yourself!)
+124 error 404 It was specified as a dependency of 'hackathon-starter'
+124 error 404
+124 error 404 Note that you can also install from a
+124 error 404 tarball, folder, http url, or git url.
+125 verbose exit [ 1, true ]
